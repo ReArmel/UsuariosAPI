@@ -10,12 +10,14 @@ namespace UsuariosAPI.Services
         private IMapper _mapper;
         private UserManager<Usuario> _userManager;
         private SignInManager<Usuario> _signinManager;
+        private TokenService _tokenService;
 
-        public UsuarioService(UserManager<Usuario> userManager, IMapper mapper, SignInManager<Usuario> signinManager)
+        public UsuarioService(UserManager<Usuario> userManager, IMapper mapper, SignInManager<Usuario> signinManager, TokenService tokenService)
         {
             _userManager = userManager;
             _mapper = mapper;
             _signinManager = signinManager;
+            _tokenService = tokenService;
         }
 
         public async Task Cadastra(CreateUsuarioDto dto)
@@ -30,7 +32,7 @@ namespace UsuariosAPI.Services
             }
         }
 
-        public async Task Login(LoginUsuarioDto dto)
+        public async Task<string> Login(LoginUsuarioDto dto)
         {
             var resultado = await _signinManager.PasswordSignInAsync(dto.Username, dto.Password, false, false);
             
@@ -38,6 +40,13 @@ namespace UsuariosAPI.Services
             {
                 throw new ApplicationException("Usuário não autenticado!");
             }
+
+            var usuario = _signinManager
+                .UserManager.Users.FirstOrDefault(user => user.NormalizedUserName == dto.Username.ToUpper());
+
+            var token = _tokenService.GenerateToken(usuario);
+
+            return token;
         }
     }
 }
