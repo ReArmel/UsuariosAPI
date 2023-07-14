@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using UsuariosAPI.Authorization;
 using UsuariosAPI.Database;
 using UsuariosAPI.Models;
 using UsuariosAPI.Services;
@@ -24,6 +25,11 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddScoped<UsuarioService>();
 builder.Services.AddScoped<TokenService>();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("IdadeMinina", policy => 
+    policy.AddRequirements(new IdadeMinima(18)));
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
