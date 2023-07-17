@@ -4,11 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace UsuariosAPI.Controllers
 {
     [ApiController]
-    [Route("Controller")]
+    [Route("[Controller]")]
     public class AcessoController : ControllerBase
     {
         [HttpGet]
-        [Authorize(Policy = "IdadeMínima")]
+        [Authorize(Policy = "IdadeMinima")]
         public IActionResult Get() 
         {
             return Ok("Acesso permitido!");

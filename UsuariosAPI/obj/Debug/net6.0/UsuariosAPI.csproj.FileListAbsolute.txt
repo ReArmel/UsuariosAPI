@@ -8,6 +8,7 @@ C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\UsuariosAPI
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Humanizer.dll
+C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -22,6 +23,8 @@ C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.E
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\rearm\source\repos\UsuariosAPI\UsuariosAPI\bin\Debug\net6.0\MySqlConnector.dll

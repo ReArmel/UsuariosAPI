@@ -13,6 +13,7 @@ namespace UsuariosAPI.Authorization
                 return Task.CompletedTask;
             
             var dataNascimento = Convert.ToDateTime(dataNascimentoClaim.Value);
+
             var idadeUsuario = DateTime.Today.Year - dataNascimento.Year;
 
             if (dataNascimento > DateTime.Today.AddYears(-idadeUsuario)) 

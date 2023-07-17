@@ -21,7 +21,7 @@ namespace UsuariosAPI.Controllers
         [HttpPost("cadastro")]
         public async Task<IActionResult> CadastraUsuario(CreateUsuarioDto dto)
         {
-            await _usuarioService.Cadastra(dto);
+            await _usuarioService.CadastraUsuario(dto);
             return Ok("Usuário cadastrado!");
         }
 
